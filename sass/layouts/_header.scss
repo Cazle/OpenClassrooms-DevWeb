@@ -1,0 +1,61 @@
+header{
+    font-family: roboto;
+    text-align: center;
+    @include FlexColumn();
+    margin: auto;
+
+    img{
+        position: relative;
+        box-shadow: 0px 2px 4px $darkestgray;
+        width: 50%;
+        padding: 4.5% 25%;
+        padding-top: 6%;
+    }
+    form{
+        padding: 4% 0% 4% 12%;
+        background-color: $darkergray;
+        
+             i{
+              margin-right: 15px;
+             }
+             input{
+              @include Noborder();
+              background-color: $darkergray;
+              }
+             ::placeholder{
+              color: black;
+             }
+    }
+    
+    div{
+        height: 300px;
+        background-color: $gray;
+        
+             h1{
+                margin: 10% auto 2%;
+                width: 70%;
+                font-size:24px;
+             }
+             p{
+                margin: 5% auto 10%;
+                width: 80%;
+            }
+            button{
+                height: 18%;
+                border-radius: 25px;
+                border: none;
+                box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.4);
+                width: 60%;
+                color: white;
+                background: linear-gradient(to bottom right, $pink, $purple);
+                transform: scale(1);
+                transition-property: transform;
+                transition-duration: 500ms;
+            }
+            button:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                
+            }
+    }  
+}
