@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&family=Shrikhand&display=swap");
+/*Couleurs principales*/
+/*Couleurs secondaires*/
 header {
   font-family: roboto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+header img {
+  position: relative;
+  box-shadow: 0px 2px 4px #A2A2A2;
+  width: 50%;
+  padding: 4.5% 25%;
+  padding-top: 6%;
+}
+header form {
+  padding: 4% 0% 4% 12%;
+  background-color: #E7E7E7;
+}
+header form i {
+  margin-right: 20px;
+}
+header form input {
+  border: none;
+  background-color: #E7E7E7;
+  outline: none;
+}
+header form ::-moz-placeholder {
+  color: black;
+}
+header form :-ms-input-placeholder {
+  color: black;
+}
+header form ::placeholder {
+  color: black;
+}
+header div {
+  height: 300px;
+  background-color: #F2F2F2;
+}
+header div h1 {
+  margin: 10% auto 2%;
+  width: 70%;
+  font-size: 25px;
+}
+header div p {
+  margin: 5% auto 10%;
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,58 @@
 @import"sass/base/_fonts.scss";
+@import"sass/utils/_variables.scss";
+
+
 
 header{
     font-family: roboto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    img{
+        position: relative;
+        box-shadow: 0px 2px 4px $darkestgray;
+        width: 50%;
+        padding: 4.5% 25%;
+        padding-top: 6%;
+    }
+    form{
+        padding: 4% 0% 4% 12%;
+        background-color: $darkergray;
+        
+             i{
+              margin-right: 20px;
+             }
+             input{
+              border: none;
+              background-color: $darkergray;
+              outline: none;
+              }
+             ::placeholder{
+              color: black;
+             }
+    }
+    
+    div{
+        height: 300px;
+        background-color: $gray;
+        
+             h1{
+             margin: 10% auto 2%;
+             width: 70%;
+             font-size:25px;
+             }
+             p{
+                margin: 5% auto 10%;
+                width: 80%;
+            }
+            button{
+
+            } 
+    }
+    
+
+    
+    
 }
