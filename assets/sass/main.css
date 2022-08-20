@@ -38,7 +38,7 @@ header form ::placeholder {
   color: black;
 }
 header div {
-  height: 300px;
+  height: auto;
   background-color: #F2F2F2;
 }
 header div h1 {
@@ -51,14 +51,15 @@ header div p {
   width: 80%;
 }
 header div button {
-  height: 18%;
+  height: 60px;
   border-radius: 25px;
   border: none;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
   width: 60%;
+  max-width: 500px;
+  margin-bottom: 10%;
   color: white;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  transform: scale(1);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition-property: transform;
   transition-duration: 500ms;
 }
@@ -99,7 +100,7 @@ nav div p {
   border-radius: 100%;
   width: 3%;
   max-width: 3%;
-  height: 12px;
+  height: 1px;
 }
 nav div i {
   position: absolute;

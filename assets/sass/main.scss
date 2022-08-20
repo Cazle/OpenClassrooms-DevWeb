@@ -1,7 +1,7 @@
-@import"sass/base/_fonts.scss";
-@import"sass/utils/_variables.scss";
-@import"sass/utils/_mixins.scss";
-@import"sass/layouts/_header.scss";
+@import"base/_fonts.scss";
+@import"utils/_variables.scss";
+@import"utils/_mixins.scss";
+@import"layouts/_header.scss";
 
 nav{
     margin: 10% 0 0 8%;
@@ -37,7 +37,7 @@ nav{
                  border-radius: 100%;
                  width: 3%;
                  max-width: 3%;
-                 height: 12px;
+                 height: 1px;
         }
         
                 i{

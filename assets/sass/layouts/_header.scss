@@ -28,7 +28,7 @@ header{
     }
     
     div{
-        height: 300px;
+        height: auto;
         background-color: $gray;
         
              h1{
@@ -41,14 +41,15 @@ header{
                 width: 80%;
             }
             button{
-                height: 18%;
+                height: 60px;
                 border-radius: 25px;
                 border: none;
-                box-shadow: 2px 5px 10px rgba($color: #000000, $alpha: 0.4);
+                box-shadow: 2px 5px 10px rgba($color: #000, $alpha: 0.4);
                 width: 60%;
+                max-width: 500px;
+                margin-bottom: 10%;
                 color: white;
-                background: linear-gradient(to bottom right, $pink, $purple);
-                transform: scale(1);
+                background: linear-gradient(175deg, $pink, $purple);
                 transition-property: transform;
                 transition-duration: 500ms;
             }
