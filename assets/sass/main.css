@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&family=Shrikhand&display=swap");
 /*Couleurs principales*/
 /*Couleurs secondaires*/
+@import "assets/_all.css";
 header {
   font-family: roboto;
   text-align: center;
