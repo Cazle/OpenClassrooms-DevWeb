@@ -11,7 +11,7 @@ header {
 }
 header img {
   position: relative;
-  box-shadow: 0px 1px 5px #A2A2A2;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   width: 50%;
   padding: 4.5% 25%;
   padding-top: 6%;
@@ -39,7 +39,7 @@ header form ::placeholder {
 }
 header div {
   height: auto;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
 }
 header div h1 {
   margin: 10% auto 2%;
@@ -103,7 +103,7 @@ nav ol li {
   height: 70px;
   width: 95%;
   margin-top: 8%;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
 }
@@ -116,7 +116,7 @@ nav ol li .fa-store {
 nav ol li i {
   position: relative;
   left: -25px;
-  color: #A2A2A2;
+  color: #7E7E7E;
   font-size: 19px;
 }
 nav ol li p {
@@ -134,11 +134,10 @@ nav ol li p {
 main {
   display: flex;
   flex-direction: column;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   width: 100%;
   height: auto;
   font-family: roboto, sans-serif;
-  margin-bottom: 5%;
 }
 main h2 {
   margin: 15% 0 5% 5%;
@@ -172,7 +171,7 @@ main .CardAccueil img:nth-child(2) {
 main .CardAccueil span {
   font-size: 12px;
   position: absolute;
-  color: #128567;
+  color: #008766;
   background-color: #99E2D0;
   border-radius: 2px;
   padding: 1.5% 3% 1.5% 3%;
@@ -197,4 +196,48 @@ main .CardAccueil .CardDesc p {
   font-size: 14px;
   font-weight: 100;
   margin: 0 0 2px 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #232323;
+  width: 100%;
+  height: auto;
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer h2 {
+  font-family: shrikhand, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  margin: 7% 0 0 8%;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 8%;
+  margin-top: 5%;
+}
+footer ul :hover {
+  color: #9356DC;
+  transition: all 100ms;
+}
+footer ul li {
+  cursor: pointer;
+  color: white;
+  margin-bottom: 8px;
+}
+footer ul i {
+  font-size: 13px;
+  margin-right: 15px;
+}
+footer ul .fa-handshake-angle {
+  margin-right: 10px;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
 }
