@@ -68,6 +68,20 @@ header div button:hover {
   transform: scale(1.05);
 }
 
+nav {
+  margin-top: 7%;
+}
+nav h2 {
+  margin-right: 40%;
+}
+nav ol :hover {
+  scale: 1.05;
+  transition: all 150ms;
+  background: #F1E6FE;
+}
+nav ol :hover i {
+  color: #9356DC;
+}
 nav ol li {
   position: relative;
   display: flex;
@@ -75,10 +89,12 @@ nav ol li {
   align-content: center;
   justify-content: center;
   height: 70px;
-  width: 95%;
-  margin-top: 7%;
-  border: 1px #F2F2F2 solid;
+  width: 93%;
+  margin-top: 8%;
+  background-color: #F2F2F2;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  cursor: pointer;
 }
 nav ol li .fa-list-ul {
   left: -31px;
