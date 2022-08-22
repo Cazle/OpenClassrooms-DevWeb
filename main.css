@@ -138,6 +138,10 @@ main {
   width: 100%;
   height: auto;
   font-family: roboto, sans-serif;
+  margin-bottom: 5%;
+}
+main h2 {
+  margin: 15% 0 5% 5%;
 }
 main .CardAccueil {
   position: relative;
@@ -145,6 +149,7 @@ main .CardAccueil {
   width: 90%;
   height: 230px;
   background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin-bottom: 5%;
   cursor: pointer;
@@ -158,9 +163,11 @@ main .CardAccueil img {
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-main .CardAccueil img :nth-child(2) {
-  -o-object-position: bottom;
-     object-position: bottom;
+main .CardAccueil img:nth-child(2) {
+  -o-object-position: 50% 62%;
+     object-position: 50% 62%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .CardAccueil span {
   font-size: 12px;
@@ -172,18 +179,22 @@ main .CardAccueil span {
   left: 235px;
   top: 12px;
 }
-main .CardAccueil h3 {
-  font-size: 17px;
-  margin: 10px 0 5px 15px;
+main .CardAccueil .CardDesc {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
-main .CardAccueil p {
+main .CardAccueil .CardDesc div, main .CardAccueil .CardDesc i {
+  margin: 2% 8% 0 0;
+  font-size: 19px;
+}
+main .CardAccueil .CardDesc h3 {
+  font-size: 17px;
+  margin: 5px 0 5px 15px;
+}
+main .CardAccueil .CardDesc p {
   font-size: 14px;
   font-weight: 100;
-  margin: 0 0 0 15px;
-}
-main .CardAccueil i {
-  position: relative;
-  font-size: 20px;
-  left: 280px;
-  bottom: 30px;
+  margin: 0 0 2px 15px;
 }
