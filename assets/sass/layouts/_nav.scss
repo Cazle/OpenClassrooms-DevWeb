@@ -1,29 +1,39 @@
 nav{
     margin-top: 7%;
+    margin-bottom: 14%;
     
     h2{
            margin-right: 40%;
        }
    ol{
+    padding: 0;
+    margin-left: 7%;
+       
+       li{
+        transition-property: transform;
+        transition: all 150ms;
+       }
        :hover{
+           cursor: pointer;
            scale:(1.05);
-           transition: all 150ms;
            background: $lighterpurple;
        }
        :hover i{
            color: $purple;
+       }
+       :hover p{
+        background-color: $purple;
        }
        li{
            position: relative;
            @include FlexAlign;
            justify-content: center;
            height: 70px;
-           width: 93%;
+           width: 95%;
            margin-top: 8%;
            background-color: $gray;
            box-shadow: 1px 3px 10px rgba($color: #000, $alpha: 0.2);
            border-radius: 25px;
-           cursor: pointer;
 
            .fa-list-ul{
                left: -31px;

@@ -3,7 +3,7 @@
 /*Couleurs principales*/
 /*Couleurs secondaires*/
 header {
-  font-family: roboto;
+  font-family: roboto, sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ header div button {
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition-property: transform;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
 }
 header div button:hover {
   cursor: pointer;
@@ -70,17 +70,29 @@ header div button:hover {
 
 nav {
   margin-top: 7%;
+  margin-bottom: 14%;
 }
 nav h2 {
   margin-right: 40%;
 }
-nav ol :hover {
-  scale: 1.05;
+nav ol {
+  padding: 0;
+  margin-left: 7%;
+}
+nav ol li {
+  transition-property: transform;
   transition: all 150ms;
+}
+nav ol :hover {
+  cursor: pointer;
+  scale: 1.05;
   background: #F1E6FE;
 }
 nav ol :hover i {
   color: #9356DC;
+}
+nav ol :hover p {
+  background-color: #9356DC;
 }
 nav ol li {
   position: relative;
@@ -89,12 +101,11 @@ nav ol li {
   align-content: center;
   justify-content: center;
   height: 70px;
-  width: 93%;
+  width: 95%;
   margin-top: 8%;
   background-color: #F2F2F2;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  cursor: pointer;
 }
 nav ol li .fa-list-ul {
   left: -31px;
@@ -118,4 +129,61 @@ nav ol li p {
   height: 20px;
   padding-top: 5px;
   color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  width: 100%;
+  height: auto;
+  font-family: roboto, sans-serif;
+}
+main .CardAccueil {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: 230px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+main .CardAccueil img {
+  height: 160px;
+  width: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+main .CardAccueil img :nth-child(2) {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+main .CardAccueil span {
+  font-size: 12px;
+  position: absolute;
+  color: #128567;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  padding: 1.5% 3% 1.5% 3%;
+  left: 235px;
+  top: 12px;
+}
+main .CardAccueil h3 {
+  font-size: 17px;
+  margin: 10px 0 5px 15px;
+}
+main .CardAccueil p {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0 0 0 15px;
+}
+main .CardAccueil i {
+  position: relative;
+  font-size: 20px;
+  left: 280px;
+  bottom: 30px;
 }

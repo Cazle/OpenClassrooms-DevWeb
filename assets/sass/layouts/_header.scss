@@ -1,5 +1,5 @@
 header{
-    font-family: roboto;
+    font-family: roboto, sans-serif;
     text-align: center;
     @include FlexColumn();
     margin: auto;
@@ -51,7 +51,7 @@ header{
                 color: white;
                 background: linear-gradient(175deg, $pink, $purple);
                 transition-property: transform;
-                transition-duration: 500ms;
+                transition-duration: 400ms;
             }
             button:hover{
                 cursor: pointer;
