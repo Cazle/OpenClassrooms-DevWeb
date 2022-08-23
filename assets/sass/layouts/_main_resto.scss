@@ -1,0 +1,85 @@
+main{
+    @include FlexColumn;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color:$gray;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    bottom: 50px;
+    font-family: roboto;
+    
+.Title {
+
+        @include FlexAlign;
+        justify-content: space-between;
+        margin: 5% 10% 0 5%;
+
+        h1 {
+            font-family: shrikhand, sans-serif;
+            font-size: 26px;
+            font-weight: lighter;
+            margin: 5% 0 0 0;
+        }
+
+        i {
+            margin-top: 4%;
+            font-size: 25px;
+            font-weight: lighter;   
+        }
+    }
+
+    h2 {
+        font-weight: lighter;
+        margin: 10% 0 0% 5%;
+        font-size: 18px;
+        border-bottom: 3px solid $mint;
+        padding-bottom: 1%;
+        width: 12%;
+    }
+    .CardResto{
+        width: 92%;
+        max-width: 400px;
+        margin: 4% auto 0% auto;
+        background-color: white;
+        height: 65px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 7px rgba($color: #000, $alpha: 0.2);
+        
+
+        h3{
+            font-size: 16px;
+            margin: 4% 0 2% 3%;
+        }
+
+    
+    .CardPrice{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            margin: 0 5% 0% 3%;
+            font-size: 13.5px;
+        }
+    }
+    
+}
+button{
+        height: 55px;
+        border-radius: 25px;
+        border: none;
+        box-shadow: 2px 5px 10px rgba($color: #000, $alpha: 0.4);
+        width: 60%;
+        max-width: 500px;
+        margin: 12% auto 8% auto;
+        color: white;
+        background: linear-gradient(175deg, $pink, $purple);
+        transition-property: transform;
+        transition-duration: 400ms;
+    }
+    button:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        
+    }
+}

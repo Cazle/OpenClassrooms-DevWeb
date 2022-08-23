@@ -2,22 +2,5 @@
 @import"../utils/mixins";
 @import"../utils/variables";
 @import"../layouts/header_resto";
-
-main{
-    @include FlexColumn;
-    width: 90%;
-    margin: auto;
-    
-    .Title{
-        @include FlexAlign;
-        @include FlexBetween;
-
-
-    
-    h1{
-        font-family: shrikhand, sans-serif;
-        font-size: 26px;
-        font-weight: lighter;
-    }
-    }
-}
+@import"../layouts/footer";
+@import"../layouts/main_resto";
