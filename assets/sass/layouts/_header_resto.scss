@@ -1,0 +1,17 @@
+header{
+    @include FlexColumn;
+     width: 100%;
+     position: relative;
+    
+     #logo{
+        padding: 6% 0 3% 25%;
+        width: 50%;
+     }
+     i{
+        position: absolute;
+        left: 20px;
+        top: 27px;
+        font-size: 20px;
+        color: black;
+     }
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&family=Shrikhand&display=swap");
+/*Couleurs principales*/
+/*Couleurs secondaires*/
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+header #logo {
+  padding: 6% 0 3% 25%;
+  width: 50%;
+}
+header i {
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  font-size: 20px;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+main .Title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .Title h1 {
+  font-family: shrikhand, sans-serif;
+  font-size: 26px;
+  font-weight: lighter;
+}

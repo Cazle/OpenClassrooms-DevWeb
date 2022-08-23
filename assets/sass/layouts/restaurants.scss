@@ -1,8 +1,23 @@
+@import"../base/fonts";
+@import"../utils/mixins";
+@import"../utils/variables";
+@import"../layouts/header_resto";
 
-header{
+main{
+    @include FlexColumn;
+    width: 90%;
+    margin: auto;
     
-    img{
-        width: 25%;
-        height: 250px;
+    .Title{
+        @include FlexAlign;
+        @include FlexBetween;
+
+
+    
+    h1{
+        font-family: shrikhand, sans-serif;
+        font-size: 26px;
+        font-weight: lighter;
+    }
     }
 }

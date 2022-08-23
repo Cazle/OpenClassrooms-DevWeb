@@ -1,6 +1,17 @@
-header img {
-  width: 25%;
-  height: 250px;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 13 |         @include FlexBetween;
+ *    |         ^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   assets\sass\layouts\restaurants.scss 13:9  root stylesheet */
 
-/*# sourceMappingURL=restaurants.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502          @include FlexBetween;\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\sass\\layouts\\restaurants.scss 13:9  root stylesheet";
+}

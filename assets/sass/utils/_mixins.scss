@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
 }
+@mixin FlexBetween(){
+    display: flex;
+    justify-content: space-between;
+}
 @mixin FlexCenter(){
     display: flex;
     justify-content: center;
