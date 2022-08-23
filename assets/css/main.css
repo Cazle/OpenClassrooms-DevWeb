@@ -188,11 +188,11 @@ main .CardAccueil .CardDesc div, main .CardAccueil .CardDesc i {
   margin: 2% 8% 0 0;
   font-size: 19px;
 }
-main .CardAccueil .CardDesc h3 {
+main .CardAccueil h3 {
   font-size: 17px;
   margin: 5px 0 5px 15px;
 }
-main .CardAccueil .CardDesc p {
+main .CardAccueil p {
   font-size: 14px;
   font-weight: 100;
   margin: 0 0 2px 15px;
