@@ -12,17 +12,16 @@ main{
       position: relative;
       margin: auto;
       width: 90%;
-      height: 230px;
+      height: 225px;
       background-color: white;
       box-shadow: 2px 2px 5px rgba($color:#000, $alpha: 0.2);
       border-radius: 15px;
       margin-bottom: 5%;
       cursor: pointer;
+      color: #000;
+      text-decoration: none;
       
-      a{
-        text-decoration: none;
-        color: #000;
-      }
+
       img{
           height: 160px;
           width: 100%;
@@ -42,28 +41,39 @@ main{
           background-color: $mint;
           border-radius: 2px;
           padding: 1.5% 3% 1.5% 3%;
-          left: 235px;
-          top: 12px;
+          margin: 3% 0 0 75%;
+          
       }
 
       .CardDesc{
           @include FlexAlign;
           justify-content: space-between;
-  
-          div, i{
-              margin: 2% 8% 0 0;
-              font-size: 19px;
-              }
-          }
+          
+          .fa-regular{
+            background: linear-gradient(175deg, $pink, $purple);
+            background-clip: text;
+            -webkit-background-clip: text;
+            margin: 15px 20px 15px 0;
+            font-size: 23px;
+            
+
+            &:hover{
+                color: transparent;
+                
+             
+            }
+            }
+          
           h3{
               font-size: 17px;
-              margin: 5px 0 5px 15px;
+              margin: 8px 0 5px 15px;
           }
           p{
               font-size: 14px;
               font-weight: 100;
               margin: 0 0 2px 15px;
           }
+        }
       }
   }
   

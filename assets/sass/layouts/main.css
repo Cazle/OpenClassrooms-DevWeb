@@ -28,6 +28,12 @@ header form input {
   outline: none;
   background-color: #E7E7E7;
 }
+header form ::-moz-placeholder {
+  color: black;
+}
+header form :-ms-input-placeholder {
+  color: black;
+}
 header form ::placeholder {
   color: black;
 }
@@ -152,13 +158,17 @@ main .CardAccueil {
 main .CardAccueil img {
   height: 160px;
   width: 100%;
-  object-position: bottom;
-  object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 main .CardAccueil img:nth-child(2) {
-  object-position: 50% 62%;
-  object-fit: cover;
+  -o-object-position: 50% 62%;
+     object-position: 50% 62%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .CardAccueil span {
   font-size: 12px;
@@ -238,5 +248,3 @@ footer ul a {
   color: white;
   text-decoration: none;
 }
-
-/*# sourceMappingURL=main.css.map */
