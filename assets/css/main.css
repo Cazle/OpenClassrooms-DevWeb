@@ -170,20 +170,30 @@ main .CardAccueil span {
   margin: 3% 0 0 75%;
 }
 main .CardAccueil .CardDesc {
+  position: relative;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
 }
 main .CardAccueil .CardDesc .fa-regular {
+  position: relative;
+  font-size: 23px;
+}
+main .CardAccueil .CardDesc .fa-solid {
+  position: relative;
+  right: 27.8px;
+  bottom: -1px;
+  font-size: 25px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  margin: 15px 20px 15px 0;
-  font-size: 23px;
-}
-main .CardAccueil .CardDesc .fa-regular:hover {
   color: transparent;
+  opacity: 0%;
+}
+main .CardAccueil .CardDesc .fa-solid:hover {
+  transition-duration: 150ms;
+  opacity: 100%;
 }
 main .CardAccueil .CardDesc h3 {
   font-size: 17px;

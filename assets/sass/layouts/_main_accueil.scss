@@ -46,23 +46,31 @@ main{
       }
 
       .CardDesc{
+        position: relative;
           @include FlexAlign;
           justify-content: space-between;
           
           .fa-regular{
+             position: relative;
+             font-size: 23px;
+           }
+           .fa-solid{
+            position: relative;
+            right: 27.8px;
+            bottom: -1px;
+            font-size: 25px;
             background: linear-gradient(175deg, $pink, $purple);
             background-clip: text;
             -webkit-background-clip: text;
-            margin: 15px 20px 15px 0;
-            font-size: 23px;
-            
+            color: transparent;
+            opacity: 0%;
 
             &:hover{
-                color: transparent;
-                
-             
+                transition-duration: 150ms;
+                opacity: 100%;
             }
-            }
+           }
+            
           
           h3{
               font-size: 17px;
