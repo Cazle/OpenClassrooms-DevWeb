@@ -51,9 +51,10 @@ header{
                 color: white;
                 background: linear-gradient(175deg, $pink, $purple);
                 transition-property: transform;
-                transition-duration: 400ms;
+                transition:all 400ms;
             }
             button:hover{
+                box-shadow: 5px 8px 15px rgba($color: #000, $alpha: 0.5);
                 cursor: pointer;
                 transform: scale(1.05);
                 

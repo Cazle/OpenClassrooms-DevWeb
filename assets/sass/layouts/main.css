@@ -61,9 +61,10 @@ header div button {
   color: white;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition-property: transform;
-  transition-duration: 400ms;
+  transition: all 400ms;
 }
 header div button:hover {
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -154,6 +155,10 @@ main .CardAccueil {
   cursor: pointer;
   color: #000;
   text-decoration: none;
+  transition-duration: 200ms;
+}
+main .CardAccueil:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 main .CardAccueil img {
   height: 160px;
@@ -200,9 +205,9 @@ main .CardAccueil .CardDesc .fa-solid {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0%;
+  transition-duration: 200ms;
 }
 main .CardAccueil .CardDesc .fa-solid:hover {
-  transition-duration: 150ms;
   opacity: 100%;
 }
 main .CardAccueil .CardDesc h3 {

@@ -93,6 +93,7 @@ main .Title {
   align-content: center;
   justify-content: space-between;
   margin: 5% 10% 0 5%;
+  position: relative;
 }
 main .Title h1 {
   font-family: shrikhand, sans-serif;
@@ -100,10 +101,24 @@ main .Title h1 {
   font-weight: lighter;
   margin: 5% 0 0 0;
 }
-main .Title i {
+main .Title .fa-solid {
+  font-size: 28px;
+  position: absolute;
+  right: -1.5px;
+  bottom: 3px;
+  opacity: 0%;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 150ms;
+}
+main .Title .fa-solid:hover {
+  opacity: 100%;
+}
+main .Title .fa-regular {
   margin-top: 4%;
   font-size: 25px;
-  font-weight: lighter;
 }
 main h2 {
   font-weight: lighter;

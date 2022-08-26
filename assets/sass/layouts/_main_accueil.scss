@@ -20,6 +20,11 @@ main{
       cursor: pointer;
       color: #000;
       text-decoration: none;
+      transition-duration: 200ms;
+      
+      &:hover{
+        box-shadow: 3px 3px 8px rgba($color:#000, $alpha: 0.3);
+      }
       
 
       img{
@@ -53,6 +58,7 @@ main{
           .fa-regular{
              position: relative;
              font-size: 23px;
+             
            }
            .fa-solid{
             position: relative;
@@ -64,14 +70,13 @@ main{
             -webkit-background-clip: text;
             color: transparent;
             opacity: 0%;
+            transition-duration: 200ms;
 
             &:hover{
-                transition-duration: 150ms;
                 opacity: 100%;
             }
            }
             
-          
           h3{
               font-size: 17px;
               margin: 8px 0 5px 15px;
