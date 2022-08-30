@@ -1,9 +1,11 @@
 nav{
+    background-color: white;
     margin-top: 7%;
     margin-bottom: 14%;
     
     h2{
-           margin-right: 40%;
+           margin: 12% 45% 0 0;
+           font-size: 21px;
        }
    ol{
     padding: 0;
@@ -34,19 +36,21 @@ nav{
            background-color: $gray;
            box-shadow: 1px 3px 10px rgba($color: #000, $alpha: 0.2);
            border-radius: 25px;
-
+            
+           i{
+               position: relative;
+               left: -25px;
+               top: 0;
+               color: $icongray;
+               font-size: 19px;
+           }
            .fa-list-ul{
                left: -31px;
            }
            .fa-store{
                left: -28px;
            }
-           i{
-               position: relative;
-               left: -25px;
-               color: $icongray;
-               font-size: 19px;
-           }
+           
            p{
                font-size: 15px;
                position: absolute;

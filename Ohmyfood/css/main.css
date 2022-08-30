@@ -21,18 +21,16 @@ header form {
   background-color: #E7E7E7;
 }
 header form i {
-  margin-right: 15px;
+  position: relative;
+  font-size: 18px;
+  left: 150;
+  top: 0px;
 }
 header form input {
+  margin-left: 9%;
   border: none;
   outline: none;
   background-color: #E7E7E7;
-}
-header form ::-moz-placeholder {
-  color: black;
-}
-header form :-ms-input-placeholder {
-  color: black;
 }
 header form ::placeholder {
   color: black;
@@ -42,6 +40,7 @@ header div {
   background-color: #F6F6F6;
 }
 header div h1 {
+  border: none;
   margin: 10% auto 2%;
   width: 70%;
   font-size: 24px;
@@ -70,11 +69,13 @@ header div button:hover {
 }
 
 nav {
+  background-color: white;
   margin-top: 7%;
   margin-bottom: 14%;
 }
 nav h2 {
-  margin-right: 40%;
+  margin: 12% 45% 0 0;
+  font-size: 21px;
 }
 nav ol {
   padding: 0;
@@ -108,17 +109,18 @@ nav ol li {
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
 }
+nav ol li i {
+  position: relative;
+  left: -25px;
+  top: 0;
+  color: #7E7E7E;
+  font-size: 19px;
+}
 nav ol li .fa-list-ul {
   left: -31px;
 }
 nav ol li .fa-store {
   left: -28px;
-}
-nav ol li i {
-  position: relative;
-  left: -25px;
-  color: #7E7E7E;
-  font-size: 19px;
 }
 nav ol li p {
   font-size: 15px;
@@ -140,8 +142,11 @@ main {
   height: auto;
   font-family: roboto, sans-serif;
 }
-main h2 {
-  margin: 15% 0 5% 5%;
+main .restaurantsAccueil {
+  margin: 13% 0 5% 5%;
+  border: none;
+  font-weight: 600;
+  font-size: 22px;
 }
 main .CardAccueil {
   position: relative;
@@ -163,17 +168,13 @@ main .CardAccueil:hover {
 main .CardAccueil img {
   height: 160px;
   width: 100%;
-  -o-object-position: bottom;
-     object-position: bottom;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-position: bottom;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 main .CardAccueil img:nth-child(2) {
-  -o-object-position: 50% 62%;
-     object-position: 50% 62%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-position: 50% 62%;
+  object-fit: cover;
 }
 main .CardAccueil span {
   font-size: 12px;
@@ -263,3 +264,128 @@ footer ul a {
   color: white;
   text-decoration: none;
 }
+
+body {
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+header #MainPhoto {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  padding: 0;
+}
+header #logo {
+  box-shadow: none;
+  padding: 6% 25% 3% 25%;
+  width: 50%;
+  background-color: white;
+}
+header i {
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  font-size: 20px;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 50px;
+  font-family: roboto, sans-serif;
+}
+main .Title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 5% 10% 0 5%;
+  position: relative;
+}
+main .Title h1 {
+  font-family: shrikhand, sans-serif;
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 5% 0 0 0;
+}
+main .Title .fa-solid {
+  font-size: 28px;
+  position: absolute;
+  right: -1.5px;
+  bottom: 3px;
+  opacity: 0%;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 150ms;
+}
+main .Title .fa-solid:hover {
+  opacity: 100%;
+}
+main .Title .fa-regular {
+  margin-top: 4%;
+  font-size: 25px;
+}
+main h2 {
+  font-weight: lighter;
+  margin: 10% 0 0% 5%;
+  font-size: 18px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 1%;
+  width: 12%;
+}
+main .CardResto {
+  width: 92%;
+  max-width: 400px;
+  margin: 4% auto 0% auto;
+  background-color: white;
+  height: 65px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+main .CardResto h3 {
+  font-size: 16px;
+  margin: 4% 0 2% 3%;
+}
+main .CardResto .CardPrice {
+  display: flex;
+  justify-content: space-between;
+}
+main .CardResto .CardPrice p {
+  margin: 0 5% 0% 3%;
+  font-size: 13.5px;
+}
+main button {
+  height: 55px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+  width: 60%;
+  max-width: 500px;
+  margin: 12% auto 8% auto;
+  color: white;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+main button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=main.css.map */

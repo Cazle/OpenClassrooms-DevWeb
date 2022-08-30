@@ -15,10 +15,17 @@ header{
         padding: 4% 0% 4% 12%;
         background-color: $darkergray;
         
+        
              i{
-              margin-right: 15px;
+              position: relative;
+              font-size: 18px;
+              left: 150;
+              top: 0px;
+              
+
              }
              input{
+                margin-left: 9%;
               @include Noborder();
               background-color: $darkergray;
               }
@@ -32,6 +39,7 @@ header{
         background-color: $gray;
         
              h1{
+                border: none;
                 margin: 10% auto 2%;
                 width: 70%;
                 font-size:24px;

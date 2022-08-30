@@ -10,14 +10,16 @@ header{
       width: 100%;
       height: 280px;
       object-fit: cover;
+      padding: 0;
      }
      #logo{
+        box-shadow: none;
         padding: 6% 25% 3% 25%;
         width: 50%;
         background-color: white;
      }
      
-     i{
+     i{z-index: 1;
         position: absolute;
         left: 20px;
         top: 27px;

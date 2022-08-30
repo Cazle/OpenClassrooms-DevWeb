@@ -5,8 +5,11 @@ main{
     height: auto;
     font-family: roboto, sans-serif;
     
-    h2{
-      margin: 15% 0 5% 5%;
+    .restaurantsAccueil{
+      margin: 13% 0 5% 5%;
+      border: none;
+      font-weight: 600;
+      font-size: 22px;
     }
     .CardAccueil{
       position: relative;
