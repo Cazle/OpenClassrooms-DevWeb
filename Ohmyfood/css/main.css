@@ -291,8 +291,8 @@ header i {
   z-index: 1;
   position: absolute;
   left: 20px;
-  top: 27px;
-  font-size: 20px;
+  top: 22px;
+  font-size: 23px;
   color: black;
 }
 
@@ -323,16 +323,17 @@ main .Title h1 {
   margin: 5% 0 0 0;
 }
 main .Title .fa-solid {
-  font-size: 28px;
+  font-size: 27px;
   position: absolute;
-  right: -1.5px;
-  bottom: 3px;
+  right: -1px;
+  bottom: 3.3px;
   opacity: 0%;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   transition: all 150ms;
+  cursor: pointer;
 }
 main .Title .fa-solid:hover {
   opacity: 100%;
@@ -349,28 +350,52 @@ main h2 {
   padding-bottom: 1%;
   width: 12%;
 }
-main .CardResto {
-  width: 92%;
-  max-width: 400px;
-  margin: 4% auto 0% auto;
-  background-color: white;
-  height: 65px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-}
-main .CardResto h3 {
-  font-size: 16px;
-  margin: 4% 0 2% 3%;
-}
-main .CardResto .CardPrice {
+main .cardResto {
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  background-color: white;
+  width: 92%;
+  height: 70px;
+  border-radius: 15px;
+  cursor: pointer;
 }
-main .CardResto .CardPrice p {
-  margin: 0 5% 0% 3%;
-  font-size: 13.5px;
+main .cardResto :hover .cardResto i {
+  width: 50px;
+  margin-right: 25px;
 }
-main button {
+main .cardResto .cardDesc h3 {
+  width: 100%;
+  margin: 5% 0 1% 5%;
+}
+main .cardResto .cardDesc p {
+  margin: 7% 0 2% 5%;
+}
+main .cardResto .cardPrice {
+  display: flex;
+  align-items: center;
+}
+main .cardResto .cardPrice .price p {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+main .cardResto .cardPrice .check {
+  height: 70px;
+  display: flex;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+}
+main .cardResto .cardPrice .check i {
+  display: flex;
+  justify-content: center;
+  margin-right: -25px;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  width: 20px;
+}
+
+button {
   height: 55px;
   border-radius: 25px;
   border: none;
@@ -383,7 +408,8 @@ main button {
   transition-property: transform;
   transition-duration: 400ms;
 }
-main button:hover {
+
+button:hover {
   cursor: pointer;
   transform: scale(1.05);
 }

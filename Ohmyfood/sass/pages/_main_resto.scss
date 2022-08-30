@@ -23,16 +23,17 @@ main{
             margin: 5% 0 0 0;
         }
         .fa-solid{
-            font-size: 28px;
+            font-size: 27px;
             position: absolute;
-            right: -1.5px;
-            bottom: 3px;
+            right: -1px;
+            bottom: 3.3px;
             opacity: 0%;
             background: linear-gradient(175deg, $pink, $purple);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             transition: all 150ms;
+            cursor: pointer;
 
             &:hover{
                 opacity: 100%;
@@ -53,31 +54,65 @@ main{
         padding-bottom: 1%;
         width: 12%;
     }
-    .CardResto{
-        width: 92%;
-        max-width: 400px;
-        margin: 4% auto 0% auto;
+    .cardResto{
+        @include FlexBetween;
+        margin: auto;
         background-color: white;
-        height: 65px;
+        width: 92%;
+        height: 70px;
         border-radius: 15px;
-        box-shadow: 2px 2px 7px rgba($color: #000, $alpha: 0.2);
+        cursor: pointer;
+
+         :hover .cardResto i {
+            width: 50px;
+            margin-right: 25px;
+
+        }
+        
         
 
-        h3{
-            font-size: 16px;
-            margin: 4% 0 2% 3%;
-        }
+        .cardDesc{
 
+            h3{
+                width: 100%;
+                margin: 5% 0 1% 5%;
+            }
+            p{
+                margin: 7% 0 2% 5%;
+            }
+        }
+        .cardPrice{
+            display: flex;
+            align-items: center;
+            
+            .price{
+            p{
+                margin-top: 50px;
+                margin-right: 10px;
+            }
+            }
+            .check{
+                height: 70px;
+                display: flex;
+                background-color: $mint; 
+                border-radius: 0 15px 15px 0;
+            
+            i{
+                display: flex;
+                justify-content: center;
+                margin-right: -25px;
+                align-items: center;
+                border-radius: 0 15px 15px 0;
+                font-size: 20px;
+                width: 20px;
+                
+
+            }
+        }
     
-    .CardPrice{
-        display: flex;
-        justify-content: space-between;
-
-        p{
-            margin: 0 5% 0% 3%;
-            font-size: 13.5px;
-        }
     }
+
+}
     
 }
 button{
@@ -98,4 +133,3 @@ button{
         transform: scale(1.05);
         
     }
-}
