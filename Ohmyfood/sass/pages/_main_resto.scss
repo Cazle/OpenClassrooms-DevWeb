@@ -9,6 +9,7 @@ main{
     bottom: 50px;
     font-family: roboto, sans-serif;
     
+    
 .Title {
 
         @include FlexAlign;
@@ -23,10 +24,10 @@ main{
             margin: 5% 0 0 0;
         }
         .fa-solid{
-            font-size: 27px;
+            font-size: 28px;
             position: absolute;
-            right: -1px;
-            bottom: 3.3px;
+            right: -1.5px;
+            bottom: 3.7px;
             opacity: 0%;
             background: linear-gradient(175deg, $pink, $purple);
             background-clip: text;
@@ -56,63 +57,89 @@ main{
     }
     .cardResto{
         @include FlexBetween;
-        margin: auto;
+        margin: 5% auto auto auto;
         background-color: white;
         width: 92%;
-        height: 70px;
+        max-width: 500px;
+        height: 65px;
         border-radius: 15px;
         cursor: pointer;
-
-         :hover .cardResto i {
-            width: 50px;
-            margin-right: 25px;
-
-        }
+        overflow: hidden;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
         
-        
-
         .cardDesc{
-
+            overflow:hidden;
             h3{
-                width: 100%;
-                margin: 5% 0 1% 5%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 17px;
+                width: auto;
+                margin: 10px 0 0 15px;
             }
             p{
-                margin: 7% 0 2% 5%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 14px;
+                white-space: nowrap;
+                width: auto;
+                margin: 8px 0 25px 15px;
             }
         }
         .cardPrice{
             display: flex;
             align-items: center;
             
-            .price{
+            div{
             p{
-                margin-top: 50px;
-                margin-right: 10px;
+                margin:50px 30px 25px 5px;
+                font-size: 14px;
+
             }
             }
             .check{
-                height: 70px;
-                display: flex;
-                background-color: $mint; 
-                border-radius: 0 15px 15px 0;
-            
-            i{
                 display: flex;
                 justify-content: center;
-                margin-right: -25px;
                 align-items: center;
+                margin-right: -70px;
+                width: 60px;
+                height: 65px;
+                background-color: $mint; 
                 border-radius: 0 15px 15px 0;
-                font-size: 20px;
-                width: 20px;
+                transition: 0.5s;
                 
-
+                
+                
+                i{  
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                width: 20px;
+                color: $mint;
+                border-radius: 100px;
+                background-color: white;
+                font-size: 15px;
             }
         }
-    
     }
-
-}
+             &:hover{
+                .check{
+                    
+                    transition: 0.5s ease;
+                    margin-right: 0;
+                   i{
+                    
+                    transition: 0.5s;
+                    rotate: 360deg;
+                    
+                    
+                    
+                    }
+                }
+                
+            }
+        }
     
 }
 button{

@@ -46,7 +46,7 @@ header div h1 {
   font-size: 24px;
 }
 header div p {
-  margin: 5% auto 10%;
+  margin: 5% auto 0 auto;
   width: 80%;
 }
 header div button {
@@ -323,10 +323,10 @@ main .Title h1 {
   margin: 5% 0 0 0;
 }
 main .Title .fa-solid {
-  font-size: 27px;
+  font-size: 28px;
   position: absolute;
-  right: -1px;
-  bottom: 3.3px;
+  right: -1.5px;
+  bottom: 3.7px;
   opacity: 0%;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   background-clip: text;
@@ -353,46 +353,72 @@ main h2 {
 main .cardResto {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 5% auto auto auto;
   background-color: white;
   width: 92%;
-  height: 70px;
+  max-width: 500px;
+  height: 65px;
   border-radius: 15px;
   cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
-main .cardResto :hover .cardResto i {
-  width: 50px;
-  margin-right: 25px;
+main .cardResto .cardDesc {
+  overflow: hidden;
 }
 main .cardResto .cardDesc h3 {
-  width: 100%;
-  margin: 5% 0 1% 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  width: auto;
+  margin: 10px 0 0 15px;
 }
 main .cardResto .cardDesc p {
-  margin: 7% 0 2% 5%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  white-space: nowrap;
+  width: auto;
+  margin: 8px 0 25px 15px;
 }
 main .cardResto .cardPrice {
   display: flex;
   align-items: center;
 }
-main .cardResto .cardPrice .price p {
-  margin-top: 50px;
-  margin-right: 10px;
+main .cardResto .cardPrice div p {
+  margin: 50px 30px 25px 5px;
+  font-size: 14px;
 }
 main .cardResto .cardPrice .check {
-  height: 70px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -70px;
+  width: 60px;
+  height: 65px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  transition: 0.5s;
 }
 main .cardResto .cardPrice .check i {
   display: flex;
   justify-content: center;
-  margin-right: -25px;
   align-items: center;
-  border-radius: 0 15px 15px 0;
-  font-size: 20px;
+  height: 20px;
   width: 20px;
+  color: #99E2D0;
+  border-radius: 100px;
+  background-color: white;
+  font-size: 15px;
+}
+main .cardResto:hover .check {
+  transition: 0.5s ease;
+  margin-right: 0;
+}
+main .cardResto:hover .check i {
+  transition: 0.5s;
+  rotate: 360deg;
 }
 
 button {
