@@ -1,12 +1,14 @@
 @import"base/fonts";
 @import"utils/variables";
 @import"utils/mixins";
+@import"components/loading_screen";
+@import"layouts/header_resto";
 @import"layouts/header";
 @import"layouts/nav";
+@import"pages/main_resto";
 @import"pages/main_accueil";
 @import"layouts/footer";
-@import"layouts/header_resto";
-@import"pages/main_resto";
+
 
 
 

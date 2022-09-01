@@ -3,7 +3,7 @@ header{
     text-align: center;
     @include FlexColumn();
     margin: auto;
-
+    
     img{
         position: relative;
         box-shadow: 0px 1px 5px rgba($color: #000, $alpha: 0.2);

@@ -2,6 +2,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Raleway:wght@300;400;600&family=Roboto:wght@500&family=Shrikhand&display=swap");
 /*Couleurs principales*/
 /*Couleurs secondaires*/
+body .center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1E6FE;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  animation: timer 200ms forwards;
+  animation-delay: 1s;
+}
+@keyframes timer {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+body .center .ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #99E2D0;
+  animation: ring 1s linear infinite;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #FF79DA;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #99E2D0;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #9356DC;
+  }
+}
+body .center .ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+body .center span {
+  z-index: 10;
+  font-family: shrikhand;
+  font-size: 30px;
+  color: #9356DC;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+header #MainPhoto {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  padding: 0;
+}
+header #logo {
+  box-shadow: none;
+  padding: 6% 25% 3% 25%;
+  width: 50%;
+  background-color: white;
+}
+header i {
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  font-size: 23px;
+  color: black;
+}
+
 header {
   font-family: roboto, sans-serif;
   text-align: center;
@@ -109,6 +202,9 @@ nav ol li {
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
 }
+nav ol li:nth-child(3) {
+  margin-bottom: 20%;
+}
 nav ol li i {
   position: relative;
   left: -25px;
@@ -132,168 +228,6 @@ nav ol li p {
   height: 20px;
   padding-top: 5px;
   color: white;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
-  width: 100%;
-  height: auto;
-  font-family: roboto, sans-serif;
-}
-main .restaurantsAccueil {
-  margin: 13% 0 5% 5%;
-  border: none;
-  font-weight: 600;
-  font-size: 22px;
-}
-main .CardAccueil {
-  position: relative;
-  margin: auto;
-  width: 90%;
-  height: 225px;
-  background-color: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  margin-bottom: 5%;
-  cursor: pointer;
-  color: #000;
-  text-decoration: none;
-  transition-duration: 200ms;
-}
-main .CardAccueil:hover {
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-}
-main .CardAccueil img {
-  height: 160px;
-  width: 100%;
-  object-position: bottom;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-main .CardAccueil img:nth-child(2) {
-  object-position: 50% 62%;
-  object-fit: cover;
-}
-main .CardAccueil span {
-  font-size: 12px;
-  position: absolute;
-  color: #008766;
-  background-color: #99E2D0;
-  border-radius: 2px;
-  padding: 1.5% 3% 1.5% 3%;
-  margin: 3% 0 0 75%;
-}
-main .CardAccueil .CardDesc {
-  position: relative;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-}
-main .CardAccueil .CardDesc .fa-regular {
-  position: relative;
-  font-size: 23px;
-}
-main .CardAccueil .CardDesc .fa-solid {
-  position: relative;
-  right: 27.8px;
-  bottom: -1px;
-  font-size: 25px;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0%;
-  transition-duration: 200ms;
-}
-main .CardAccueil .CardDesc .fa-solid:hover {
-  opacity: 100%;
-}
-main .CardAccueil .CardDesc h3 {
-  font-size: 17px;
-  margin: 8px 0 5px 15px;
-}
-main .CardAccueil .CardDesc p {
-  font-size: 14px;
-  font-weight: 100;
-  margin: 0 0 2px 15px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #232323;
-  width: 100%;
-  height: auto;
-  font-family: roboto;
-  font-size: 15px;
-  font-weight: 500;
-}
-footer h2 {
-  font-family: shrikhand, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: white;
-  margin: 7% 0 0 8%;
-}
-footer ul {
-  list-style-type: none;
-  padding-left: 8%;
-  margin-top: 5%;
-}
-footer ul :hover {
-  color: #9356DC;
-  transition: all 100ms;
-}
-footer ul li {
-  cursor: pointer;
-  color: white;
-  margin-bottom: 8px;
-}
-footer ul i {
-  font-size: 13px;
-  margin-right: 15px;
-}
-footer ul .fa-handshake-angle {
-  margin-right: 10px;
-}
-footer ul a {
-  color: white;
-  text-decoration: none;
-}
-
-body {
-  background-color: #F6F6F6;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-}
-header #MainPhoto {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  padding: 0;
-}
-header #logo {
-  box-shadow: none;
-  padding: 6% 25% 3% 25%;
-  width: 50%;
-  background-color: white;
-}
-header i {
-  z-index: 1;
-  position: absolute;
-  left: 20px;
-  top: 22px;
-  font-size: 23px;
-  color: black;
 }
 
 main {
@@ -485,6 +419,137 @@ button {
 button:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  width: 100%;
+  height: auto;
+  font-family: roboto, sans-serif;
+}
+main .restaurantsAccueil {
+  margin: 13% 0 5% 5%;
+  border: none;
+  font-weight: 600;
+  font-size: 22px;
+}
+main .CardAccueil {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: 225px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  transition-duration: 200ms;
+}
+main .CardAccueil:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+main .CardAccueil img {
+  height: 160px;
+  width: 100%;
+  object-position: bottom;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+main .CardAccueil img:nth-child(2) {
+  object-position: 50% 62%;
+  object-fit: cover;
+}
+main .CardAccueil span {
+  font-size: 12px;
+  position: absolute;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  padding: 1.5% 3% 1.5% 3%;
+  margin: 3% 0 0 75%;
+}
+main .CardAccueil .CardDesc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+main .CardAccueil .CardDesc .fa-regular {
+  position: relative;
+  font-size: 23px;
+}
+main .CardAccueil .CardDesc .fa-solid {
+  position: relative;
+  right: 27.8px;
+  bottom: -1px;
+  font-size: 25px;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0%;
+  transition-duration: 200ms;
+}
+main .CardAccueil .CardDesc .fa-solid:hover {
+  opacity: 100%;
+}
+main .CardAccueil .CardDesc h3 {
+  font-size: 17px;
+  margin: 8px 0 5px 15px;
+}
+main .CardAccueil .CardDesc p {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0 0 2px 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #232323;
+  width: 100%;
+  height: auto;
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer h2 {
+  font-family: shrikhand, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  margin: 7% 0 0 8%;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 8%;
+  margin-top: 5%;
+}
+footer ul :hover {
+  color: #9356DC;
+  transition: all 100ms;
+}
+footer ul li {
+  cursor: pointer;
+  color: white;
+  margin-bottom: 8px;
+}
+footer ul i {
+  font-size: 13px;
+  margin-right: 15px;
+}
+footer ul .fa-handshake-angle {
+  margin-right: 10px;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,68 @@
+body{
+
+    .center{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: $lighterpurple;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        animation: timer 200ms forwards;
+        animation-delay: 1s;
+    
+        @keyframes timer {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+                z-index: -10;
+            }
+        }
+        .ring{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: $mint;
+            animation: ring 1s linear infinite;
+
+            @keyframes ring {
+
+                0%{
+                    transform: rotate(0deg);
+                    box-shadow: 1px 5px 2px $pink;
+                }
+                50%{
+                    transform: rotate(180deg);
+                    box-shadow: 1px 5px 2px $mint;
+                }
+                100%{
+                    transform: rotate(360deg);
+                    box-shadow: 1px 5px 2px $purple;
+                }
+            }
+
+            &:before{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                box-shadow: 0 0 5px rgba(255, 255, 255, $alpha: 0.3);
+            }
+        }
+        span{
+            z-index: 10;
+            font-family: shrikhand;
+            font-size: 30px;
+            color: $purple;
+        }
+    }
+}
