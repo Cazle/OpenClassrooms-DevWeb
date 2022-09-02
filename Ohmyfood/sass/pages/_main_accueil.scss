@@ -5,11 +5,29 @@ main{
     height: auto;
     font-family: roboto, sans-serif;
     
+    @media (min-width:768px){
+      margin-top: 10%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
     .restaurantsAccueil{
       margin: 13% 0 5% 5%;
       border: none;
       font-weight: 600;
       font-size: 22px;
+
+      @media (min-width:768px){
+        @include FlexCenter;
+        position: absolute;
+        top:-200px;
+        margin-left: 25%;
+        font-family: shrikhand, serif;
+        font-size: 28px;
+        padding-bottom: 2%;
+        border-bottom: 5px solid $purple;
+        width: 50%;
+      }
     }
     .CardAccueil{
       position: relative;
@@ -24,6 +42,11 @@ main{
       color: #000;
       text-decoration: none;
       transition-duration: 200ms;
+
+      @media (min-width:768px){
+        width: 46%;
+        height: 290px;
+      }
       
       &:hover{
         box-shadow: 3px 3px 8px rgba($color:#000, $alpha: 0.3);
@@ -36,6 +59,10 @@ main{
           object-position: bottom;
           object-fit: cover;
           border-radius: 15px 15px 0 0;
+
+          @media (min-width:768px){
+            height: 220px;
+          }
   
           &:nth-child(2){
               object-position: 50% 62%;
@@ -61,6 +88,11 @@ main{
           .fa-regular{
              position: relative;
              font-size: 23px;
+
+             @media (min-width:768px){
+              font-size: 27px;
+              top: 5px;
+             }
              
            }
            .fa-solid{
@@ -75,6 +107,12 @@ main{
             opacity: 0%;
             transition-duration: 200ms;
 
+            @media (min-width:768px){
+              font-size: 29px;
+              bottom: -5px;
+              right: 32px;
+            }
+
             &:hover{
                 opacity: 100%;
             }
@@ -83,11 +121,21 @@ main{
           h3{
               font-size: 17px;
               margin: 8px 0 5px 15px;
+
+              @media (min-width:768px){
+                font-size: 19px;
+                margin: 8px 0 5px 20px;
+              }
           }
           p{
               font-size: 14px;
               font-weight: 100;
               margin: 0 0 2px 15px;
+
+              @media (min-width:768px){
+                font-size: 15px;
+                margin: 0 0 2px 20px;
+              }
           }
         }
       }

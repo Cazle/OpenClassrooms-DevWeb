@@ -14,7 +14,7 @@ body .center {
   position: fixed;
   z-index: 10;
   animation: timer 200ms forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 @keyframes timer {
   from {
@@ -113,11 +113,23 @@ header form {
   padding: 4% 0% 4% 12%;
   background-color: #E7E7E7;
 }
+@media (min-width: 768px) {
+  header form {
+    padding: 4% 4% 4% 12%;
+    font-size: 22px;
+  }
+}
 header form i {
   position: relative;
   font-size: 18px;
-  left: 150;
+  left: 25px;
   top: 0px;
+}
+@media (min-width: 768px) {
+  header form i {
+    font-size: 25px;
+    left: 40px;
+  }
 }
 header form input {
   margin-left: 9%;
@@ -132,15 +144,31 @@ header div {
   height: auto;
   background-color: #F6F6F6;
 }
+@media (min-width: 768px) {
+  header div {
+    height: 240px;
+  }
+}
 header div h1 {
   border: none;
   margin: 10% auto 2%;
   width: 70%;
   font-size: 24px;
 }
+@media (min-width: 768px) {
+  header div h1 {
+    font-size: 26px;
+    margin: 5% auto 2%;
+  }
+}
 header div p {
   margin: 5% auto 0 auto;
   width: 80%;
+}
+@media (min-width: 768px) {
+  header div p {
+    font-size: 17px;
+  }
 }
 header div button {
   height: 60px;
@@ -154,6 +182,13 @@ header div button {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   transition-property: transform;
   transition: all 400ms;
+}
+@media (min-width: 768px) {
+  header div button {
+    margin: 5% 0 5% 0;
+    width: 65%;
+    height: 80px;
+  }
 }
 header div button:hover {
   box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5);
@@ -170,9 +205,26 @@ nav h2 {
   margin: 12% 45% 0 0;
   font-size: 21px;
 }
+@media (min-width: 768px) {
+  nav h2 {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0 25%;
+    font-size: 28px;
+    padding-bottom: 2%;
+    border-bottom: 5px solid #9356DC;
+    width: 50%;
+    font-family: shrikhand, serif;
+  }
+}
 nav ol {
   padding: 0;
   margin-left: 7%;
+}
+@media (min-width: 768px) {
+  nav ol {
+    margin-left: 11%;
+  }
 }
 nav ol li {
   transition-property: transform;
@@ -202,8 +254,21 @@ nav ol li {
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
 }
+@media (min-width: 768px) {
+  nav ol li {
+    height: 110px;
+    width: 90%;
+    margin-top: 4%;
+    font-size: 20px;
+  }
+}
 nav ol li:nth-child(3) {
   margin-bottom: 20%;
+}
+@media (min-width: 768px) {
+  nav ol li:nth-child(3) {
+    margin-bottom: 10%;
+  }
 }
 nav ol li i {
   position: relative;
@@ -212,11 +277,27 @@ nav ol li i {
   color: #7E7E7E;
   font-size: 19px;
 }
+@media (min-width: 768px) {
+  nav ol li i {
+    font-size: 29px;
+    left: -65px;
+  }
+}
 nav ol li .fa-list-ul {
   left: -31px;
 }
+@media (min-width: 768px) {
+  nav ol li .fa-list-ul {
+    left: -71px;
+  }
+}
 nav ol li .fa-store {
   left: -28px;
+}
+@media (min-width: 768px) {
+  nav ol li .fa-store {
+    left: -68px;
+  }
 }
 nav ol li p {
   font-size: 15px;
@@ -228,6 +309,15 @@ nav ol li p {
   height: 20px;
   padding-top: 5px;
   color: white;
+}
+@media (min-width: 768px) {
+  nav ol li p {
+    left: -20px;
+    font-size: 18px;
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+  }
 }
 
 main {
@@ -429,11 +519,32 @@ main {
   height: auto;
   font-family: roboto, sans-serif;
 }
+@media (min-width: 768px) {
+  main {
+    margin-top: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 main .restaurantsAccueil {
   margin: 13% 0 5% 5%;
   border: none;
   font-weight: 600;
   font-size: 22px;
+}
+@media (min-width: 768px) {
+  main .restaurantsAccueil {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -200px;
+    margin-left: 25%;
+    font-family: shrikhand, serif;
+    font-size: 28px;
+    padding-bottom: 2%;
+    border-bottom: 5px solid #9356DC;
+    width: 50%;
+  }
 }
 main .CardAccueil {
   position: relative;
@@ -449,6 +560,12 @@ main .CardAccueil {
   text-decoration: none;
   transition-duration: 200ms;
 }
+@media (min-width: 768px) {
+  main .CardAccueil {
+    width: 46%;
+    height: 290px;
+  }
+}
 main .CardAccueil:hover {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
@@ -458,6 +575,11 @@ main .CardAccueil img {
   object-position: bottom;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+@media (min-width: 768px) {
+  main .CardAccueil img {
+    height: 220px;
+  }
 }
 main .CardAccueil img:nth-child(2) {
   object-position: 50% 62%;
@@ -483,6 +605,12 @@ main .CardAccueil .CardDesc .fa-regular {
   position: relative;
   font-size: 23px;
 }
+@media (min-width: 768px) {
+  main .CardAccueil .CardDesc .fa-regular {
+    font-size: 27px;
+    top: 5px;
+  }
+}
 main .CardAccueil .CardDesc .fa-solid {
   position: relative;
   right: 27.8px;
@@ -495,6 +623,13 @@ main .CardAccueil .CardDesc .fa-solid {
   opacity: 0%;
   transition-duration: 200ms;
 }
+@media (min-width: 768px) {
+  main .CardAccueil .CardDesc .fa-solid {
+    font-size: 29px;
+    bottom: -5px;
+    right: 32px;
+  }
+}
 main .CardAccueil .CardDesc .fa-solid:hover {
   opacity: 100%;
 }
@@ -502,10 +637,22 @@ main .CardAccueil .CardDesc h3 {
   font-size: 17px;
   margin: 8px 0 5px 15px;
 }
+@media (min-width: 768px) {
+  main .CardAccueil .CardDesc h3 {
+    font-size: 19px;
+    margin: 8px 0 5px 20px;
+  }
+}
 main .CardAccueil .CardDesc p {
   font-size: 14px;
   font-weight: 100;
   margin: 0 0 2px 15px;
+}
+@media (min-width: 768px) {
+  main .CardAccueil .CardDesc p {
+    font-size: 15px;
+    margin: 0 0 2px 20px;
+  }
 }
 
 footer {
@@ -526,10 +673,21 @@ footer h2 {
   color: white;
   margin: 7% 0 0 8%;
 }
+@media (min-width: 768px) {
+  footer h2 {
+    font-size: 23px;
+    margin: 4% 0 0 8%;
+  }
+}
 footer ul {
   list-style-type: none;
   padding-left: 8%;
   margin-top: 5%;
+}
+@media (min-width: 768px) {
+  footer ul {
+    font-size: 16px;
+  }
 }
 footer ul :hover {
   color: #9356DC;

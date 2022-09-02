@@ -12,7 +12,7 @@ body{
         position: fixed;
         z-index: 10;
         animation: timer 200ms forwards;
-        animation-delay: 1s;
+        animation-delay: 1.5s;
     
         @keyframes timer {
             from{
