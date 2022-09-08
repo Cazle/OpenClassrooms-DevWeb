@@ -1,9 +1,9 @@
 
-header{
+.header_main{
     font-family: roboto, sans-serif;
     text-align: center;
     @include FlexColumn();
-    margin: auto;
+    
     
     img{
         position: relative;
@@ -11,14 +11,19 @@ header{
         width: 50%;
         padding: 4.5% 25%;
         padding-top: 6%;
+
+        @media (min-width:768px){
+            width: 35%;
+            padding: 2% 35% 2% 33%;
+        }
     }
     form{
         padding: 4% 0% 4% 12%;
         background-color: $darkergray;
         
         @media (min-width:768px){
-            padding: 4% 4% 4% 12%;
-            font-size: 22px;
+            padding: 2% 4% 2% 9%;
+            font-size: 18px;
         }
         
         
@@ -29,7 +34,7 @@ header{
               top: 0px;
 
               @media (min-width:768px){
-               font-size: 25px;
+               font-size: 22px;
                left: 40px;
               }
               
@@ -53,7 +58,7 @@ header{
         background-color: $gray;
 
         @media (min-width:768px){
-            height: 240px;
+            height: 200px;
         }
         
              h1{
@@ -63,7 +68,7 @@ header{
                 font-size:24px;
 
                 @media (min-width:768px){
-                    font-size: 26px;
+                    font-size: 22px;
                     margin: 5% auto 2%;
                 }
              }
@@ -72,10 +77,10 @@ header{
                 width: 80%;
 
                 @media (min-width:768px){
-                    font-size: 17px;
+                    font-size: 16px;
                 }
             }
-            button{
+            .button_accueil{
                 height: 60px;
                 border-radius: 25px;
                 border: none;
@@ -90,11 +95,11 @@ header{
 
                 @media (min-width:768px){
                     margin: 5% 0 5% 0;
-                    width: 65%;
-                    height: 80px;
+                    width: 55%;
+                    height: 50px;
                 }
             }
-            button:hover{
+            .button_accueil:hover{
                 box-shadow: 5px 8px 15px rgba($color: #000, $alpha: 0.5);
                 cursor: pointer;
                 transform: scale(1.05);

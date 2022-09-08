@@ -12,7 +12,7 @@ body .center {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: -10;
   animation: timer 200ms forwards;
   animation-delay: 1.5s;
 }
@@ -80,11 +80,28 @@ header #MainPhoto {
   object-fit: cover;
   padding: 0;
 }
+@media (min-width: 768px) {
+  header #MainPhoto {
+    height: 450px;
+  }
+}
 header #logo {
   box-shadow: none;
   padding: 6% 25% 3% 25%;
   width: 50%;
   background-color: white;
+}
+@media (min-width: 768px) {
+  header #logo {
+    width: 35%;
+    padding: 6% 35% 3% 33%;
+  }
+}
+@media (min-width: 992px) {
+  header #logo {
+    width: 250px;
+    padding: 1% 55% 1% 42%;
+  }
 }
 header i {
   z-index: 1;
@@ -94,83 +111,100 @@ header i {
   font-size: 23px;
   color: black;
 }
+@media (min-width: 768px) {
+  header i {
+    font-size: 30px;
+    top: 45px;
+    left: 30px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  header i {
+    top: 25px;
+  }
+}
 
-header {
+.header_main {
   font-family: roboto, sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
-header img {
+.header_main img {
   position: relative;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
   width: 50%;
   padding: 4.5% 25%;
   padding-top: 6%;
 }
-header form {
+@media (min-width: 768px) {
+  .header_main img {
+    width: 35%;
+    padding: 2% 35% 2% 33%;
+  }
+}
+.header_main form {
   padding: 4% 0% 4% 12%;
   background-color: #E7E7E7;
 }
 @media (min-width: 768px) {
-  header form {
-    padding: 4% 4% 4% 12%;
-    font-size: 22px;
+  .header_main form {
+    padding: 2% 4% 2% 9%;
+    font-size: 18px;
   }
 }
-header form i {
+.header_main form i {
   position: relative;
   font-size: 18px;
   left: 25px;
   top: 0px;
 }
 @media (min-width: 768px) {
-  header form i {
-    font-size: 25px;
+  .header_main form i {
+    font-size: 22px;
     left: 40px;
   }
 }
-header form input {
+.header_main form input {
   margin-left: 9%;
   border: none;
   outline: none;
   background-color: #E7E7E7;
 }
-header form ::placeholder {
+.header_main form ::placeholder {
   color: black;
 }
-header div {
+.header_main div {
   height: auto;
   background-color: #F6F6F6;
 }
 @media (min-width: 768px) {
-  header div {
-    height: 240px;
+  .header_main div {
+    height: 200px;
   }
 }
-header div h1 {
+.header_main div h1 {
   border: none;
   margin: 10% auto 2%;
   width: 70%;
   font-size: 24px;
 }
 @media (min-width: 768px) {
-  header div h1 {
-    font-size: 26px;
+  .header_main div h1 {
+    font-size: 22px;
     margin: 5% auto 2%;
   }
 }
-header div p {
+.header_main div p {
   margin: 5% auto 0 auto;
   width: 80%;
 }
 @media (min-width: 768px) {
-  header div p {
-    font-size: 17px;
+  .header_main div p {
+    font-size: 16px;
   }
 }
-header div button {
+.header_main div .button_accueil {
   height: 60px;
   border-radius: 25px;
   border: none;
@@ -184,13 +218,13 @@ header div button {
   transition: all 400ms;
 }
 @media (min-width: 768px) {
-  header div button {
+  .header_main div .button_accueil {
     margin: 5% 0 5% 0;
-    width: 65%;
-    height: 80px;
+    width: 55%;
+    height: 50px;
   }
 }
-header div button:hover {
+.header_main div .button_accueil:hover {
   box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transform: scale(1.05);
@@ -201,6 +235,11 @@ nav {
   margin-top: 7%;
   margin-bottom: 14%;
 }
+@media (min-width: 768px) {
+  nav {
+    height: 250px;
+  }
+}
 nav h2 {
   margin: 12% 45% 0 0;
   font-size: 21px;
@@ -209,11 +248,11 @@ nav h2 {
   nav h2 {
     display: flex;
     justify-content: center;
-    margin: 5% 0 0 25%;
+    margin: 3% 0 0 30%;
     font-size: 28px;
     padding-bottom: 2%;
     border-bottom: 5px solid #9356DC;
-    width: 50%;
+    width: 40%;
     font-family: shrikhand, serif;
   }
 }
@@ -223,7 +262,8 @@ nav ol {
 }
 @media (min-width: 768px) {
   nav ol {
-    margin-left: 11%;
+    display: flex;
+    margin-left: 6%;
   }
 }
 nav ol li {
@@ -256,10 +296,11 @@ nav ol li {
 }
 @media (min-width: 768px) {
   nav ol li {
-    height: 110px;
-    width: 90%;
+    height: 60px;
+    width: 50%;
     margin-top: 4%;
-    font-size: 20px;
+    margin-right: 5%;
+    font-size: 14px;
   }
 }
 nav ol li:nth-child(3) {
@@ -279,8 +320,8 @@ nav ol li i {
 }
 @media (min-width: 768px) {
   nav ol li i {
-    font-size: 29px;
-    left: -65px;
+    font-size: 15px;
+    left: -6px;
   }
 }
 nav ol li .fa-list-ul {
@@ -288,7 +329,7 @@ nav ol li .fa-list-ul {
 }
 @media (min-width: 768px) {
   nav ol li .fa-list-ul {
-    left: -71px;
+    left: -9px;
   }
 }
 nav ol li .fa-store {
@@ -296,7 +337,7 @@ nav ol li .fa-store {
 }
 @media (min-width: 768px) {
   nav ol li .fa-store {
-    left: -68px;
+    left: -8px;
   }
 }
 nav ol li p {
@@ -314,13 +355,13 @@ nav ol li p {
   nav ol li p {
     left: -20px;
     font-size: 18px;
-    width: 40px;
-    height: 30px;
-    padding-top: 10px;
+    width: 25px;
+    height: 20px;
+    padding-top: 4px;
   }
 }
 
-main {
+.resto {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -332,7 +373,16 @@ main {
   bottom: 50px;
   font-family: roboto, sans-serif;
 }
-main .Title {
+@media (min-width: 992px) {
+  .resto {
+    flex-direction: row;
+    height: auto;
+    min-height: 400px;
+    max-height: 450px;
+    max-height: 500px;
+  }
+}
+.resto .Title {
   display: flex;
   align-items: center;
   align-content: center;
@@ -340,13 +390,30 @@ main .Title {
   margin: 5% 10% 0 5%;
   position: relative;
 }
-main .Title h1 {
+@media (min-width: 992px) {
+  .resto .Title {
+    position: absolute;
+  }
+}
+.resto .Title h1 {
   font-family: shrikhand, sans-serif;
   font-size: 26px;
   font-weight: lighter;
   margin: 5% 0 0 0;
 }
-main .Title .fa-solid {
+@media (min-width: 768px) {
+  .resto .Title h1 {
+    margin: 5% 0 5% 10%;
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .resto .Title h1 {
+    margin: 0px 400px 10px 100px;
+    white-space: nowrap;
+  }
+}
+.resto .Title .fa-solid {
   font-size: 28px;
   position: absolute;
   right: -1.5px;
@@ -359,28 +426,70 @@ main .Title .fa-solid {
   transition: all 150ms;
   cursor: pointer;
 }
-main .Title .fa-solid:hover {
+@media (min-width: 768px) {
+  .resto .Title .fa-solid {
+    margin: 0 10% 5.8% 0;
+    font-size: 34px;
+  }
+}
+.resto .Title .fa-solid:hover {
   opacity: 100%;
 }
-main .Title .fa-regular {
+.resto .Title .fa-regular {
   margin-top: 4%;
   font-size: 25px;
 }
-main h2 {
+@media (min-width: 768px) {
+  .resto .Title .fa-regular {
+    font-size: 32px;
+    margin: 0 10% 2% 0;
+  }
+}
+.resto h2 {
   font-weight: lighter;
   margin: 10% 0 0% 5%;
   font-size: 18px;
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 1%;
   width: 12%;
+  max-width: 50px;
 }
-main .cardResto {
+@media (min-width: 768px) {
+  .resto h2 {
+    text-align: center;
+    margin: 3% 0 0 43%;
+    width: 15%;
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .resto h2 {
+    margin: 3% 0 0 37%;
+  }
+}
+.resto section {
+  height: 380px;
+}
+@media (min-width: 768px) {
+  .resto section {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .resto section {
+    width: 100%;
+    max-width: 30%;
+    max-height: 300px;
+    margin: 125px auto 0 auto;
+  }
+}
+.resto section .cardResto {
   display: flex;
   justify-content: space-between;
   margin: 5% auto auto auto;
   background-color: white;
   width: 92%;
-  max-width: 500px;
+  max-width: 550px;
   height: 65px;
   border-radius: 15px;
   cursor: pointer;
@@ -389,40 +498,45 @@ main .cardResto {
   animation-name: apparition;
   animation: apparition 1s ease;
 }
-main .cardResto:nth-child(3) {
+@media (min-width: 768px) {
+  .resto section .cardResto {
+    margin: 2% auto auto auto;
+  }
+}
+.resto section .cardResto:nth-child(3) {
   animation-delay: 0s;
 }
-main .cardResto:nth-child(4) {
+.resto section .cardResto:nth-child(4) {
   animation-delay: 0.1s;
 }
-main .cardResto:nth-child(5) {
+.resto section .cardResto:nth-child(5) {
   animation-delay: 0.2s;
 }
-main .cardResto:nth-child(6) {
+.resto section .cardResto:nth-child(6) {
   animation-delay: 0.3s;
 }
-main .cardResto:nth-child(7) {
+.resto section .cardResto:nth-child(7) {
   animation-delay: 0.4s;
 }
-main .cardResto:nth-child(8) {
+.resto section .cardResto:nth-child(8) {
   animation-delay: 0.5s;
 }
-main .cardResto:nth-child(9) {
+.resto section .cardResto:nth-child(9) {
   animation-delay: 0.6s;
 }
-main .cardResto:nth-child(10) {
+.resto section .cardResto:nth-child(10) {
   animation-delay: 0.7s;
 }
-main .cardResto:nth-child(11) {
+.resto section .cardResto:nth-child(11) {
   animation-delay: 0.8s;
 }
-main .cardResto:nth-child(12) {
+.resto section .cardResto:nth-child(12) {
   animation-delay: 0.9s;
 }
-main .cardResto:nth-child(13) {
+.resto section .cardResto:nth-child(13) {
   animation-delay: 1s;
 }
-main .cardResto:nth-child(14) {
+.resto section .cardResto:nth-child(14) {
   animation-delay: 1.1s;
 }
 @keyframes apparition {
@@ -434,10 +548,10 @@ main .cardResto:nth-child(14) {
     opacity: 1;
   }
 }
-main .cardResto .cardDesc {
+.resto section .cardResto .cardDesc {
   overflow: hidden;
 }
-main .cardResto .cardDesc h3 {
+.resto section .cardResto .cardDesc h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -445,7 +559,7 @@ main .cardResto .cardDesc h3 {
   width: auto;
   margin: 10px 0 0 15px;
 }
-main .cardResto .cardDesc p {
+.resto section .cardResto .cardDesc p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
@@ -453,15 +567,15 @@ main .cardResto .cardDesc p {
   width: auto;
   margin: 8px 0 25px 15px;
 }
-main .cardResto .cardPrice {
+.resto section .cardResto .cardPrice {
   display: flex;
   align-items: center;
 }
-main .cardResto .cardPrice div p {
+.resto section .cardResto .cardPrice div p {
   margin: 50px 30px 25px 5px;
   font-size: 14px;
 }
-main .cardResto .cardPrice .check {
+.resto section .cardResto .cardPrice .check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,7 +586,7 @@ main .cardResto .cardPrice .check {
   border-radius: 0 15px 15px 0;
   transition: 0.5s;
 }
-main .cardResto .cardPrice .check i {
+.resto section .cardResto .cardPrice .check i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,16 +597,16 @@ main .cardResto .cardPrice .check i {
   background-color: white;
   font-size: 15px;
 }
-main .cardResto:hover .check {
+.resto section .cardResto:hover .check {
   transition: 0.5s ease;
   margin-right: 0;
 }
-main .cardResto:hover .check i {
-  transition: 0.5s;
-  rotate: 360deg;
+.resto section .cardResto:hover .check i {
+  transition: 0.4s;
+  rotate: 720deg;
 }
 
-button {
+.button_resto {
   height: 55px;
   border-radius: 25px;
   border: none;
@@ -505,13 +619,25 @@ button {
   transition-property: transform;
   transition-duration: 400ms;
 }
+@media (min-width: 768px) {
+  .button_resto {
+    margin: 5% auto 5% auto;
+  }
+}
+@media (min-width: 992px) {
+  .button_resto {
+    position: absolute;
+    margin: 28% 0 0 37.5%;
+    width: 25%;
+  }
+}
 
-button:hover {
+.button_resto:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
-main {
+.accueil {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
@@ -520,33 +646,33 @@ main {
   font-family: roboto, sans-serif;
 }
 @media (min-width: 768px) {
-  main {
+  .accueil {
     margin-top: 10%;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-main .restaurantsAccueil {
+.accueil .restaurantsAccueil {
   margin: 13% 0 5% 5%;
   border: none;
   font-weight: 600;
   font-size: 22px;
 }
 @media (min-width: 768px) {
-  main .restaurantsAccueil {
+  .accueil .restaurantsAccueil {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -200px;
-    margin-left: 25%;
+    margin: 2% 0 5% 30%;
+    top: -110px;
     font-family: shrikhand, serif;
     font-size: 28px;
     padding-bottom: 2%;
     border-bottom: 5px solid #9356DC;
-    width: 50%;
+    width: 40%;
   }
 }
-main .CardAccueil {
+.accueil .CardAccueil {
   position: relative;
   margin: auto;
   width: 90%;
@@ -561,15 +687,15 @@ main .CardAccueil {
   transition-duration: 200ms;
 }
 @media (min-width: 768px) {
-  main .CardAccueil {
+  .accueil .CardAccueil {
     width: 46%;
     height: 290px;
   }
 }
-main .CardAccueil:hover {
+.accueil .CardAccueil:hover {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
-main .CardAccueil img {
+.accueil .CardAccueil img {
   height: 160px;
   width: 100%;
   object-position: bottom;
@@ -577,15 +703,15 @@ main .CardAccueil img {
   border-radius: 15px 15px 0 0;
 }
 @media (min-width: 768px) {
-  main .CardAccueil img {
+  .accueil .CardAccueil img {
     height: 220px;
   }
 }
-main .CardAccueil img:nth-child(2) {
+.accueil .CardAccueil img:nth-child(2) {
   object-position: 50% 62%;
   object-fit: cover;
 }
-main .CardAccueil span {
+.accueil .CardAccueil span {
   font-size: 12px;
   position: absolute;
   color: #008766;
@@ -594,24 +720,24 @@ main .CardAccueil span {
   padding: 1.5% 3% 1.5% 3%;
   margin: 3% 0 0 75%;
 }
-main .CardAccueil .CardDesc {
+.accueil .CardAccueil .CardDesc {
   position: relative;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
 }
-main .CardAccueil .CardDesc .fa-regular {
+.accueil .CardAccueil .CardDesc .fa-regular {
   position: relative;
   font-size: 23px;
 }
 @media (min-width: 768px) {
-  main .CardAccueil .CardDesc .fa-regular {
+  .accueil .CardAccueil .CardDesc .fa-regular {
     font-size: 27px;
     top: 5px;
   }
 }
-main .CardAccueil .CardDesc .fa-solid {
+.accueil .CardAccueil .CardDesc .fa-solid {
   position: relative;
   right: 27.8px;
   bottom: -1px;
@@ -624,32 +750,32 @@ main .CardAccueil .CardDesc .fa-solid {
   transition-duration: 200ms;
 }
 @media (min-width: 768px) {
-  main .CardAccueil .CardDesc .fa-solid {
+  .accueil .CardAccueil .CardDesc .fa-solid {
     font-size: 29px;
     bottom: -5px;
     right: 32px;
   }
 }
-main .CardAccueil .CardDesc .fa-solid:hover {
+.accueil .CardAccueil .CardDesc .fa-solid:hover {
   opacity: 100%;
 }
-main .CardAccueil .CardDesc h3 {
+.accueil .CardAccueil .CardDesc h3 {
   font-size: 17px;
   margin: 8px 0 5px 15px;
 }
 @media (min-width: 768px) {
-  main .CardAccueil .CardDesc h3 {
+  .accueil .CardAccueil .CardDesc h3 {
     font-size: 19px;
     margin: 8px 0 5px 20px;
   }
 }
-main .CardAccueil .CardDesc p {
+.accueil .CardAccueil .CardDesc p {
   font-size: 14px;
   font-weight: 100;
   margin: 0 0 2px 15px;
 }
 @media (min-width: 768px) {
-  main .CardAccueil .CardDesc p {
+  .accueil .CardAccueil .CardDesc p {
     font-size: 15px;
     margin: 0 0 2px 20px;
   }

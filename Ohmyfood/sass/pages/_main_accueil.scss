@@ -1,4 +1,4 @@
-main{
+.accueil{
     @include FlexColumn;
     background-color: $gray;
     width: 100%;
@@ -20,13 +20,13 @@ main{
       @media (min-width:768px){
         @include FlexCenter;
         position: absolute;
-        top:-200px;
-        margin-left: 25%;
+        margin: 2% 0 5% 30%;
+        top:-110px;
         font-family: shrikhand, serif;
         font-size: 28px;
         padding-bottom: 2%;
         border-bottom: 5px solid $purple;
-        width: 50%;
+        width: 40%;
       }
     }
     .CardAccueil{

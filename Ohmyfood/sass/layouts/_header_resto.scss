@@ -11,19 +11,43 @@ header{
       height: 280px;
       object-fit: cover;
       padding: 0;
+
+      @media(min-width:768px){
+         height: 450px;
+      }
      }
      #logo{
         box-shadow: none;
         padding: 6% 25% 3% 25%;
         width: 50%;
         background-color: white;
+
+        @media(min-width:768px){
+         width: 35%;
+         padding: 6% 35% 3% 33%;
+        }
+        @media(min-width:992px){
+         width: 250px;
+         padding: 1% 55% 1% 42%;
+        }
      }
      
-     i{z-index: 1;
+     i{
+        z-index: 1;
         position: absolute;
         left: 20px;
         top: 22px;
         font-size: 23px;
         color: black;
+
+        @media(min-width:768px){
+         font-size: 30px;
+         top: 45px;
+         left: 30px;
+
+         @media(min-width:992px){
+              top: 25px;
+         }
+        }
      }
 }

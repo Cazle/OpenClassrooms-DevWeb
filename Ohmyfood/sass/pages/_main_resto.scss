@@ -1,4 +1,4 @@
-main{
+.resto{
     @include FlexColumn;
     width: 100%;
     margin: auto;
@@ -8,6 +8,14 @@ main{
     position: relative;
     bottom: 50px;
     font-family: roboto, sans-serif;
+
+    @media(min-width:992px){
+        flex-direction: row;
+        height: auto;
+        min-height: 400px;
+        max-height: 450px;
+        max-height: 500px;
+    }
     
     
 .Title {
@@ -17,11 +25,24 @@ main{
         margin: 5% 10% 0 5%;
         position: relative;
 
+        @media(min-width:992px){
+            position: absolute;
+        }
+
         h1 {
             font-family: shrikhand, sans-serif;
             font-size: 26px;
             font-weight: lighter;
             margin: 5% 0 0 0;
+
+            @media(min-width:768px){
+                margin: 5% 0 5% 10%;
+                font-size: 32px;
+            }
+            @media(min-width:992px){
+                margin: 0px 400px 10px 100px;
+                white-space: nowrap;
+            }
         }
         .fa-solid{
             font-size: 28px;
@@ -36,6 +57,11 @@ main{
             transition: all 150ms;
             cursor: pointer;
 
+            @media(min-width:768px){
+                margin: 0 10% 5.8% 0;
+                font-size: 34px;
+            }
+
             &:hover{
                 opacity: 100%;
             }
@@ -44,6 +70,11 @@ main{
         .fa-regular {
             margin-top: 4%;
             font-size: 25px; 
+
+            @media(min-width:768px){
+                font-size: 32px;
+                margin: 0 10% 2% 0;
+            }
         }
     }
 
@@ -54,13 +85,38 @@ main{
         border-bottom: 3px solid $mint;
         padding-bottom: 1%;
         width: 12%;
+        max-width: 50px;
+
+        @media(min-width:768px){
+            text-align: center;
+            margin: 3% 0 0 43%;
+            width: 15%;
+            font-size: 22px;
+
+            @media(min-width:992px){
+                margin: 3% 0 0 37%;
+            }
+        }
     }
+    section{
+           height: 380px;
+
+           @media(min-width:768px){
+            height: 300px;
+           }
+           @media(min-width:992px){
+            width: 100%;
+            max-width: 30%;
+            max-height: 300px;
+            margin: 125px auto 0 auto;
+           }
+    
     .cardResto{
         @include FlexBetween;
         margin: 5% auto auto auto;
         background-color: white;
         width: 92%;
-        max-width: 500px;
+        max-width: 550px;
         height: 65px;
         border-radius: 15px;
         cursor: pointer;
@@ -68,6 +124,10 @@ main{
         box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
         animation-name: apparition;
         animation: apparition 1s ease;
+        
+        @media(min-width:768px){
+            margin: 2% auto auto auto;
+        }
        
         &:nth-child(3) {animation-delay: 0s;}
         &:nth-child(4) {animation-delay: 0.1s;}
@@ -161,8 +221,8 @@ main{
                     margin-right: 0;
                    i{
                     
-                    transition: 0.5s;
-                    rotate: 360deg;
+                    transition: 0.4s;
+                    rotate: 720deg;
                     
                     
                     
@@ -173,7 +233,8 @@ main{
         }
     
 }
-button{
+}
+.button_resto{
         height: 55px;
         border-radius: 25px;
         border: none;
@@ -185,8 +246,19 @@ button{
         background: linear-gradient(175deg, $pink, $purple);
         transition-property: transform;
         transition-duration: 400ms;
+
+        @media(min-width:768px){
+            margin: 5% auto 5% auto;
+        }
+        @media(min-width:992px){
+            position: absolute;
+            margin: 28% 0 0 37.5%;
+            width: 25%;
+            
+
+         }
     }
-    button:hover{
+    .button_resto:hover{
         cursor: pointer;
         transform: scale(1.05);
         
