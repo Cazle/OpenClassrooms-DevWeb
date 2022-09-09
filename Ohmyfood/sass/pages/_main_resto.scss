@@ -1,3 +1,9 @@
+.body_resto{
+    
+    @media (min-width:992px){
+        background-color: white;
+    }
+}
 .resto{
     @include FlexColumn;
     width: 100%;
@@ -10,14 +16,22 @@
     font-family: roboto, sans-serif;
 
     @media(min-width:992px){
-        flex-direction: row;
-        height: auto;
-        min-height: 400px;
-        max-height: 450px;
-        max-height: 500px;
+        height: 550px ;
+        max-width: 90%;
+        border-radius: 40px 40px 40px 40px;
     }
     
+   .bloc_resto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     
+    @media (min-width:992px){
+        flex-direction: row;
+    }
+
+
+   } 
 .Title {
 
         @include FlexAlign;
@@ -26,7 +40,9 @@
         position: relative;
 
         @media(min-width:992px){
-            position: absolute;
+            justify-content: space-around;
+            margin: 2% 10% 0 5%;
+           
         }
 
         h1 {
@@ -40,7 +56,7 @@
                 font-size: 32px;
             }
             @media(min-width:992px){
-                margin: 0px 400px 10px 100px;
+                margin: 0px 300px 10px 100px;
                 white-space: nowrap;
             }
         }
@@ -61,6 +77,15 @@
                 margin: 0 10% 5.8% 0;
                 font-size: 34px;
             }
+            @media (min-width:992px){
+                opacity: 1;
+                z-index: 1;
+                margin: auto;
+                position: absolute;
+                font-size: 42px;
+                right: 255px;
+                bottom: 14px;
+            }
 
             &:hover{
                 opacity: 100%;
@@ -69,11 +94,16 @@
         }
         .fa-regular {
             margin-top: 4%;
-            font-size: 25px; 
+            font-size: 25px;
 
             @media(min-width:768px){
                 font-size: 32px;
                 margin: 0 10% 2% 0;
+            }
+            @media (min-width:992px){
+                font-size: 38px;
+                right: 150px;
+                position: absolute;
             }
         }
     }
@@ -108,7 +138,7 @@
             width: 100%;
             max-width: 30%;
             max-height: 300px;
-            margin: 125px auto 0 auto;
+            margin: 25px auto 0 auto;
            }
     
     .cardResto{
@@ -234,6 +264,10 @@
     
 }
 }
+.bloc_button_resto{
+    display: flex;
+    justify-content: center;
+}
 .button_resto{
         height: 55px;
         border-radius: 25px;
@@ -248,15 +282,11 @@
         transition-duration: 400ms;
 
         @media(min-width:768px){
-            margin: 5% auto 5% auto;
+            margin: 20px auto 20px auto;
         }
         @media(min-width:992px){
-            position: absolute;
-            margin: 28% 0 0 37.5%;
-            width: 25%;
-            
-
-         }
+            margin: 80px auto 20px auto;
+        }
     }
     .button_resto:hover{
         cursor: pointer;

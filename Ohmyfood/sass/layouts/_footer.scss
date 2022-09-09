@@ -7,7 +7,10 @@ footer{
     font-family: roboto;
     font-size: 15px;
     font-weight: 500;
-
+    
+    @media (min-width:992px){
+        height: 220px;
+    }
 
     h2{
         font-family: shrikhand, sans-serif;
@@ -20,6 +23,10 @@ footer{
             font-size: 23px;
             margin: 4% 0 0 8%;
         }
+        @media (min-width:992px){
+            font-size: 25px;
+            margin: 1% 0 0 8%;
+        }
     }
     ul{
         list-style-type: none;
@@ -28,6 +35,9 @@ footer{
 
         @media (min-width:768px){
             font-size: 16px;
+        }
+        @media (min-width:992px){
+            margin-top: 1%;
         }
         :hover{
             color: $purple;
