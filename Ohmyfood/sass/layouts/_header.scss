@@ -13,9 +13,14 @@
         padding-top: 6%;
 
         @media (min-width:768px){
-            width: 35%;
-            padding: 2% 35% 2% 33%;
+            width: 25%;
+            padding: 3.5% 38%;
         }
+        @media (min-width:992px){
+            padding: 1% 43%;
+            width: 15%;
+        }
+
     }
     form{
         padding: 4% 0% 4% 12%;
@@ -24,6 +29,9 @@
         @media (min-width:768px){
             padding: 2% 4% 2% 9%;
             font-size: 18px;
+        }
+        @media (min-width:992px){
+            padding: 1% 2% 1% 4.5%;
         }
         
         
@@ -45,7 +53,12 @@
                 margin-left: 9%;
               @include Noborder();
               background-color: $darkergray;
+
+              @media (min-width:992px){
+                margin-left: 5%;
               }
+              }
+
              ::placeholder{
               color: black;
 
@@ -60,6 +73,9 @@
         @media (min-width:768px){
             height: 200px;
         }
+        @media (min-width:992px){
+            height: 70px;
+        }
         
              h1{
                 border: none;
@@ -71,6 +87,10 @@
                     font-size: 22px;
                     margin: 5% auto 2%;
                 }
+                @media (min-width:992px){
+                    margin: 1% auto 1%;
+                    
+                }
              }
              p{
                 margin: 5% auto 0 auto;
@@ -78,6 +98,10 @@
 
                 @media (min-width:768px){
                     font-size: 16px;
+                }
+                @media (min-width:992px){
+                    margin: 1.5% auto 1.5%;
+                    font-size: 17px;
                 }
             }
             .button_accueil{
@@ -87,7 +111,7 @@
                 box-shadow: 2px 5px 10px rgba($color: #000, $alpha: 0.4);
                 width: 60%;
                 max-width: 500px;
-                margin-bottom: 10%;
+                margin: 10% 0 10% 0;
                 color: white;
                 background: linear-gradient(175deg, $pink, $purple);
                 transition-property: transform;
@@ -97,6 +121,11 @@
                     margin: 5% 0 5% 0;
                     width: 55%;
                     height: 50px;
+                }
+                @media (min-width:992px){
+                    margin: 0% 0 0% 0;
+                    width: 25%;
+                    height: 45px;
                 }
             }
             .button_accueil:hover{
