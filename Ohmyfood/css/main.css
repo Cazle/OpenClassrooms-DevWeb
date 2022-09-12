@@ -233,7 +233,7 @@ header i {
 @media (min-width: 992px) {
   .header_main div p {
     margin: 1.5% auto 1.5%;
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 .header_main div .button_accueil {
@@ -323,8 +323,9 @@ nav ol {
 }
 @media (min-width: 992px) {
   nav ol {
-    margin-left: 4%;
+    margin-left: 8.9%;
     height: 100px;
+    width: 85%;
   }
 }
 nav ol li {
@@ -401,7 +402,7 @@ nav ol li i {
 @media (min-width: 992px) {
   nav ol li i {
     font-size: 20px;
-    left: -17px;
+    left: -8px;
   }
 }
 nav ol li .fa-list-ul {
@@ -414,7 +415,7 @@ nav ol li .fa-list-ul {
 }
 @media (min-width: 992px) {
   nav ol li .fa-list-ul {
-    left: -20px;
+    left: -10px;
   }
 }
 nav ol li .fa-store {
@@ -427,7 +428,7 @@ nav ol li .fa-store {
 }
 @media (min-width: 992px) {
   nav ol li .fa-store {
-    left: -19px;
+    left: -9px;
   }
 }
 nav ol li p {
@@ -766,6 +767,12 @@ nav ol li p {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 992px) {
+  .accueil {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 .accueil .restaurantsAccueil {
   margin: 0% 0 5% 5%;
   border: none;
@@ -852,6 +859,11 @@ nav ol li p {
   border-radius: 2px;
   padding: 1.5% 3% 1.5% 3%;
   margin: 3% 0 0 75%;
+}
+@media (min-width: 992px) {
+  .accueil .CardAccueil span {
+    margin: 2% 0 0 80%;
+  }
 }
 .accueil .CardAccueil .CardDesc {
   position: relative;
