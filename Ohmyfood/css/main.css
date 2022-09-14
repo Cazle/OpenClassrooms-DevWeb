@@ -94,13 +94,13 @@ header #logo {
 @media (min-width: 768px) {
   header #logo {
     width: 35%;
-    padding: 6% 35% 3% 33%;
+    padding: 2% 30% 2% 35%;
   }
 }
 @media (min-width: 992px) {
   header #logo {
     width: 250px;
-    padding: 1% 55% 1% 42%;
+    padding: 1% 30% 1% 42%;
   }
 }
 header i {
@@ -145,7 +145,7 @@ header i {
 }
 @media (min-width: 992px) {
   .header_main img {
-    padding: 1% 43%;
+    padding: 1% 42.5%;
     width: 15%;
   }
 }
@@ -161,7 +161,7 @@ header i {
 }
 @media (min-width: 992px) {
   .header_main form {
-    padding: 1% 2% 1% 4.5%;
+    padding: 1% 3% 1% 4.5%;
   }
 }
 .header_main form i {
@@ -592,7 +592,7 @@ nav ol li p {
   .resto section {
     width: 100%;
     max-width: 30%;
-    max-height: 300px;
+    height: 370px;
     margin: 25px auto 0 auto;
   }
 }
@@ -611,53 +611,29 @@ nav ol li p {
   animation-name: apparition;
   animation: apparition 1s ease;
 }
+.resto section .cardResto:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.resto section .cardResto:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.resto section .cardResto:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.resto section .cardResto:nth-child(5) {
+  animation-delay: 1.1s;
+}
 @media (min-width: 768px) {
   .resto section .cardResto {
     margin: 2% auto auto auto;
   }
 }
-.resto section .cardResto:nth-child(3) {
-  animation-delay: 0s;
-}
-.resto section .cardResto:nth-child(4) {
-  animation-delay: 0.1s;
-}
-.resto section .cardResto:nth-child(5) {
-  animation-delay: 0.2s;
-}
-.resto section .cardResto:nth-child(6) {
-  animation-delay: 0.3s;
-}
-.resto section .cardResto:nth-child(7) {
-  animation-delay: 0.4s;
-}
-.resto section .cardResto:nth-child(8) {
-  animation-delay: 0.5s;
-}
-.resto section .cardResto:nth-child(9) {
-  animation-delay: 0.6s;
-}
-.resto section .cardResto:nth-child(10) {
-  animation-delay: 0.7s;
-}
-.resto section .cardResto:nth-child(11) {
-  animation-delay: 0.8s;
-}
-.resto section .cardResto:nth-child(12) {
-  animation-delay: 0.9s;
-}
-.resto section .cardResto:nth-child(13) {
-  animation-delay: 1s;
-}
-.resto section .cardResto:nth-child(14) {
-  animation-delay: 1.1s;
-}
 @keyframes apparition {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -716,7 +692,7 @@ nav ol li p {
 }
 .resto section .cardResto:hover .check i {
   transition: 0.4s;
-  rotate: 720deg;
+  transform: rotate(720deg);
 }
 
 .bloc_button_resto {
@@ -744,7 +720,7 @@ nav ol li p {
 }
 @media (min-width: 992px) {
   .button_resto {
-    margin: 80px auto 20px auto;
+    margin: 0px auto 20px auto;
   }
 }
 
@@ -981,7 +957,8 @@ footer ul :hover {
   transition: all 100ms;
 }
 footer ul li {
-  width: 15%;
+  width: auto;
+  max-width: 200px;
   cursor: pointer;
   color: white;
   margin-bottom: 8px;

@@ -10,6 +10,7 @@ footer{
     
     @media (min-width:992px){
         height: 220px;
+        
     }
 
     h2{
@@ -46,7 +47,8 @@ footer{
         }
 
         li{
-            width: 15%;
+            width: auto;
+            max-width: 200px;
             cursor: pointer;
             color: white;
             margin-bottom: 8px;
